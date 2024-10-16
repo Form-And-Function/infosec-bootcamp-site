@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infosec Bootcamp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Infosec Bootcamp for Safe AI</h1>
+    </header>
+    
+    <section>
+        <button onclick="window.location.href='https://forms.gle/ykhDape8zbeg6ovY9'" class="center-button">Express Interest</button>
+    
+        <h2>Cybersecurity Program Overview</h2>
+        <p>This is a draft of a 6-week intensive bootcamp in cybersecurity for AI safety. It's not necessarily going to happen, but it might! If you <a href="https://forms.gle/ykhDape8zbeg6ovY9">express interest</a>, we'll let you know if it does.</p>
+        <p>The program focuses on providing hands-on experience in critical areas of cybersecurity. It covers a wide array of topics, including cryptography, networking, Linux fundamentals, application security, cloud security, and practical projects. Each week consists of lectures and labs to deepen understanding and develop real-world skills.</p>
+        
+        <h2>Week-by-Week Breakdown</h2>
+        <ul>
+            <li><strong>Week 1: Cryptography</strong>
+                <ul>
+                    <li>Explore cryptography fundamentals, PKI, and secure communications.</li>
+                    <li>Labs include setting up a local CA, implementing TLS, and secure messaging protocols.</li>
+                </ul>
+            </li>
+            <li><strong>Week 2: Networking</strong>
+                <ul>
+                    <li>Cover networking protocols, anomaly detection, and Zero Trust architecture.</li>
+                    <li>Labs involve network traffic analysis and designing Zero Trust Networks.</li>
+                </ul>
+            </li>
+            <li><strong>Week 3: Linux Fundamentals</strong>
+                <ul>
+                    <li>Dive into Linux OS essentials, containerization, boot processes, and access control.</li>
+                    <li>Labs include building custom Linux commands, containers, and Secure Boot configuration.</li>
+                </ul>
+            </li>
+            <li><strong>Week 4: Application and Web Security</strong>
+                <ul>
+                    <li>Focus on common web exploits such as SQL Injection, XSS, and memory exploitation techniques.</li>
+                    <li>Labs provide practical experience in exploiting and defending against these vulnerabilities.</li>
+                </ul>
+            </li>
+            <li><strong>Week 5: Cloud Security</strong>
+                <ul>
+                    <li>Learn cloud networking, Zero Trust, IAM, reliability, and Kubernetes security.</li>
+                    <li>Labs involve building secure cloud infrastructures, implementing IAM, and managing Kubernetes clusters.</li>
+                </ul>
+            </li>
+            <li><strong>Week 6: Project Week</strong>
+                <ul>
+                    <li>Apply the skills you've learned in real-world projects such as creating password managers or microsegmentation systems.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Additional Resources</h2>
+        <p>Throughout the program, students engage in book clubs, tabletop exercises, and conference talks to further enhance their learning experience. These activities provide insight into real-world security challenges and foster collaboration within the cybersecurity community.</p>
+        <h2>FAQ</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3 class="faq-question">Why is cybersecurity important for AI safety?<span class="dropdown-icon">▼</span></h3>
+                <div class="faq-answer">
+                    <p>There are two main reasons:</p>
+                    <ol>
+                        <li>As AI systems become increasingly powerful, the potential for misuse if they fall into the hands of bad actors increases. So it's important for labs to be able to secure their model weights against very powerful attackers.</li>
+                        <li>In the <a href="https://www.lesswrong.com/posts/kcKrE9mzEHrdqtDpE/the-case-for-ensuring-that-powerful-ais-are-controlled">"control" AI safety setting</a>, schemer AI systems' output will be monitored to ensure they aren't taking any malicious actions. Scheming models might try to circumvent this by either <a href="https://aligned.substack.com/p/self-exfiltration">exfiltrating their own weights</a> or <a href="https://www.lesswrong.com/posts/BAzCGCys4BkzGDCWR/the-prototypical-catastrophic-ai-action-is-getting-root">hacking the monitoring infrastructure</a>. Ultimately, a scheming AI is a lot like a malicious insider in a company, and in both cases strong cybersecurity practices can mitigate these risks.</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Why isn't existing cybersecurity at labs enough? They already don't want their model weights to be leaked.<span class="dropdown-icon">▼</span></h3>
+                <div class="faq-answer">
+                    <p>Existing cybersecurity teams at labs are remarkable and doing great work! But there are a few reasons to think it might be worth supplementing and supporting them:</p>
+                    <ul>
+                        <li>It's a really hard job and they may need all the help they can get. Labs by default might struggle to scale up their existing cybersecurity infrastructure quickly enough. AI technology is improving at a very rapid clip, and while some organizations like Google are practiced at defending against serious attackers, many labs still have relatively small cybersecurity teams. They're trying to grow their teams, but they might not manage it fast enough.</li>
+                        <li>The risks to labs aren't as large as the risks to the world. For labs, there are incentives to "move fast and break things" to be the first to deploy a model, and it might be acceptable to risk the model weights leaking if it means not becoming obsolete. Many kinds of cybersecurity can unfortunately be costly to implement in a variety of ways.</li>
+                        <li>Labs might not be fully modeling how sophisticated the attacks they might face in the future could be, either because they haven't fully thought through how dangerous and capable their models could become or because they haven't reckoned with the fact that nation-state actors might become keenly interested in their model weights.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Why train new people in cybersecurity instead of relying on existing experts?<span class="dropdown-icon">▼</span></h3>
+                <div class="faq-answer">
+                    <p>Existing industry cybersecurity experts have a lot of extremely useful expertise. We're not trying to replace them, but rather to supplement their efforts. Unfortunately, it's shockingly hard to hire for cybersecurity talent, and labs are struggling to find amazing candidates. The AI safety community has many exceptionally bright and dedicated people who can pick things up quickly, and so it's easy to imagine it becoming a substantial talent pool for the field.</p>
+                    <p>Moreover, there are a few particular strengths we hope alumni of this bootcamp could contribute:</p>
+                    <ul>
+                        <li>Understanding of the capabilities AI systems might develop and that those models might be trying to ruthlessly scheme to attack the company. By default, many cybersecurity experts probably haven't thought about AI risk and would treat models as liable to output code that might contain bugs, but not code that's likely to be purposely and carefully malicious.</li>
+                        <li>Different primary threat models. Cybersecurity experts are less likely than members of the AI safety community to have considered that models might improve to become a core strategic national advantage, so they might underweight the risks of nation-states trying to steal model weights or cause a <a href="https://www.lesswrong.com/posts/ceBpLHJDdCt3xfEok/ai-catastrophes-and-rogue-deployments">rogue deployment</a>.</li>
+                        <li>As AI systems become more advanced, <a href="https://www.lesswrong.com/posts/2wxufQWK8rXcDGbyL/access-to-powerful-ai-might-make-computer-security-radically">they might become increasingly useful for cybersecurity</a>. People in the AI safety community are generally quite well-versed in automating things with cutting-edge models.</li>
+                    </ul>
+                    <p>In addition, having some background in cybersecurity is useful for many other roles in the AI risk ecosystem (such as policy, model evaluations, and writing safety cases and RSPs). Hopefully, providing a quick way to gain some basic cybersecurity know-how leads to folks in these other fields being better informed.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Isn't the pace crazy fast?<span class="dropdown-icon">▼</span></h3>
+                <div class="faq-answer">
+                    <p>Yes, yes it is. This bootcamp is inspired by <a href="https://www.arena.education/">another bootcamp</a> that had a similarly ludicrous pace, and that one worked out great. We've structured the content to remove any gnarly sticky bits that are time-consuming but don't teach much important, and we'll have TAs to swoop in if people get stuck. You can get a lot done when you pair program all day!</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">The program might be free? That seems too good to be true. What's the catch?<span class="dropdown-icon">▼</span></h3>
+                <div class="faq-answer">
+                    <p>We're not sure what model we'll use for pricing, but we think cybersecurity is really important and we very much need new talent in the space. We don't want cost to be a barrier!</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
